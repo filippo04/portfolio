@@ -1,0 +1,12 @@
+@font-face{
+    font-family:GothamBook;
+    src: url(/fonts/GothamRounded-Book.otf);
+    font-family:GothamMI;
+    src: url(/fonts/GothamRounded-MediumItalic.otf);
+    font-family:Awesom;
+    src: url(/fonts/FontAwesome.otf);
+    font-family:GothamM;
+    src: url(/fonts/GothamRounded-Medium.otf);
+    font-family:GothamBI;
+    src: url(/fonts/GothamRounded-BookItalic.otf);
+   }
