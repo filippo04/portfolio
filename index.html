@@ -1,472 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-   <!--     humburger-->
-     
-      <div class="nav dropdown">
-  <a class="mobile-nav dropdown-toggle" data-toggle="dropdown"></a>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#sg">Services generic</a></li>
-    <li><a href="#si">Services iphone</a></li>
-    <li><a href="#pf">Portfolio</a></li>
-    <li><a href="#tm">Team</a></li>
-    <li><a href="#sb">Subscribe me</a></li>
-    <li><a href="#f">Contacts</a></li>
-  </ul>
-</div>
-      
-      <!--     humburger-->
-   <header id="header">
-     
-       <h2 class="header-title">HALCYON <span>DAYS</span></h2>
-       <p class="header-text">An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops.</p>
-       <a href="#">LEARN MORE</a>
-   </header>
-   <div id="in">
-      <div class="in-area">
-       <h2>A CREATIVE PORTFOLIO TEMPLATE</h2>
-       <img src="./img/sep.png">
-       <p>Sed a lorem quis neque interdum <b>consequat ut sed sem.</b> Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-       </div>
-   </div>
-   <div id="sg">
-       <h2 class="sg-title">LOVE WHAT YOU DO, AND YOU’LL DO IT WELL</h2>
-       <img src="./img/sep.png" class="sg-sep">
-       <ul class="sg-con">
-           <li class="sg-con-it">
-               <img class="sg-con-it-pic" src="./img/sg-f_01.png">
-               <h2>DIGITAL DESIGN //</h2>
-               <img class="sg-con-item-line" src="./img/sg-l-it.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum 
-primis in faucibus.</p>
-           </li>
-           <li class="sg-con-it">
-               <img class="sg-con-it-pic" src="./img/sg-f_02.png">
-               <h2>WEB DEVELOPMENT //</h2>
-               <img class="sg-con-item-line" src="./img/sg-l-it.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum 
-primis in faucibus.</p>
-           </li>
-           <li class="sg-con-it">
-               <img class="sg-con-it-pic" src="./img/sg-f_03.png">
-               <h2>WE LOVE YOU //</h2>
-               <img class="sg-con-item-line" src="./img/sg-l-it.png">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum 
-primis in faucibus.</p>
-           </li>
-       </ul>
-   </div>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-      <ol class="carousel-indicators sg-in-marg">
-    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-      <div class="carousel-inner" role="listbox">
-          <div class="active item">
-          <div id="si">
-       <div  class="si-left"><img src="./img/slider-item-back1.png"></div>
-       <div class="si-right">
-           <h2>RESPONSIVE DESIGN SPECIALIST</h2>
-           <div>
-           <img src="img/sep.png" class="si-sep">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p> 
-
-<p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p> 
-
-<p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p></div>
-       </div>
+    <header>
+        <div class="hd-area">
+            <a href="#">BOUNCY</a>
+            <ul class="hd-menu">
+                <li><a href=".au">Hello</a></li>
+                <li><a href=".aud">About</a></li>
+                <li><a href=".os">Services</a></li>
+                <li><a href=".p">Portfolio</a></li>
+                <li><a href=".t">Team</a></li>
+                <li><a href=".b">Blog</a></li>
+                <li><a href=".cu">Contact</a></li>
+            </ul>
         </div>
-         </div>
-         <div class="item">
-         <div id="si">
-       <div  class="si-left"><img src="./img/slider-item-back1.png"></div>
-       <div class="si-right">
-           <h2>RESPONSIVE DESIGN SPECIALIST</h2>
-           <div>
-           <img src="img/sep.png" class="si-sep">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p> 
+        <div id="myCarousel" class="carousel slide h-slide" data-ride="carousel">
+            <!-- Indicators -->
 
-<p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p> 
-
-<p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p></div>
-       </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item h-item active">
+                    <h2>We Are Code Cafe</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                    <a href=".au" class="item-hover"></a>
+                </div>
+            </div>
         </div>
-         </div>
-         <div class="item">
-         <div id="si">
-       <div  class="si-left"><img src="./img/slider-item-back1.png"></div>
-       <div class="si-right">
-           <h2>RESPONSIVE DESIGN SPECIALIST</h2>
-           <div>
-           <img src="img/sep.png" class="si-sep">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p> 
-
-<p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p> 
-
-<p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p></div>
-       </div>
+    </header>
+    <div class="au">
+        <div class="au-text">
+            <h2>This is Bouncy</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+            <a href="#">Read More</a>
         </div>
-         </div>
-         
-          </div>
-       </div>
-       <div id="cn">
-           <h2>I GOT 99 PROBLEMS</h2>
-           <p>BUT <i>DESIGN</i>  ‘AINT ONE</p>
-           <a href="#pf"><img src="./img/arrow.png"></a>
-       </div>      
-    <div id="pf">
-       <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">CREATIVE MINDS</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+        <img src="./img/ipad.png">
     </div>
-  </div>
-       <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">THINK ALIKE</h4>
+    <div class="aud">
+        <div class="aud-head">
+            <h2>DetailS ABOUT BOUNCY</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-       <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">PIXEL PERFECTION</h4>
-        </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <ul class="cr-item">
-         
-          <li>
-             
-              <div class="pf-big-pic">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-    <img src="img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> 
-             
-              </div>
-              
-              <h2>CREATIVE MINDS</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic1">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> </div>
-              <h2>THINK ALIKE</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic2">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-                  </div> </div>
-              <h2>PIXEL PERFECTION</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-      </ul>
-    </div>
-
-    <div class="item">
-    <ul class="cr-item">
-         
-          <li>
-             
-              <div class="pf-big-pic">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> 
-             
-              </div>
-              
-              <h2>CREATIVE MINDS</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic1">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> </div>
-              <h2>THINK ALIKE</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic2">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-                  </div> </div>
-              <h2>PIXEL PERFECTION</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-      </ul>
-    </div>
-
-    <div class="item">
-    <ul class="cr-item">
-         
-          <li>
-             
-              <div class="pf-big-pic">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> 
-             
-              </div>
-              
-              <h2>CREATIVE MINDS</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic1">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-</div> </div>
-              <h2>THINK ALIKE</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-          <li>
-              <div class="pf-big-pic pic2">
-              <div class="pf-hover btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
-    <img src="./img/pic-hov.png">
-    <p>VIEW MORE</p>
-                  </div> </div>
-              <h2>PIXEL PERFECTION</h2>
-              <img src="./img/sg-l-it.png">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-          </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Indicators -->
-  <ol class="carousel-indicators cr-in-marg">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-</div>
-  
-    </div>
-      <div id="ignite">
-          <h2>IGNITE YOUR PASSION</h2>
-      </div>
-      <div id="tm">
-          <h2>WE’RE A TEAM THAT ADORE WHAT WE DO</h2>
-          <img class="tm-img" src="img/sep.png">
-          <div id="myCarousel" class="carousel slide tm-area" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators cr-in-marg">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-        <ul class="team">
-            <li>
-                <img class="tp0" src="./img/mask.png">
-                <h2>JON SNOW</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
+        <ul class="tabs aud-tabs">
+            <li class="active">
+                <a href="#home" data-toggle="tab"><img src="./img/heart.png" alt=""></a>
             </li>
             <li>
-                <img class="tp1" src="./img/mask.png">
-                <h2>CERSEI LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
+                <a href="#menu1" data-toggle="tab"><img src="./img/mouse.png" alt=""></a>
             </li>
             <li>
-                <img class="tp2" src="./img/mask.png">
-                <h2>JAMIE LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
+                <a href="#menu2" data-toggle="tab"><img src="./img/light.png" alt=""></a>
             </li>
         </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Creative Ideas</h3>
+                <p>At <i>vero</i> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias <i>excepturi</i> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>m1</h3>
+                <p>some content</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>m2</h3>
+                <p>some content</p>
+            </div>
+        </div>
     </div>
-<div class="item"><ul class="team">
-            <li>
-                <img class="tp0" src="./img/mask.png">
-                <h2>JON SNOW</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
-            <li>
-                <img class="tp1" src="./img/mask.png">
-                <h2>CERSEI LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
-            <li>
-                <img class="tp2" src="./img/mask.png">
-                <h2>JAMIE LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
+    <div class="fw">
+        <h2>FEATURED PROJECTS</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <ul class="fw-items">
+            <li><span><h3></h3></span></li>
+            <li><span><h3>VINTAGE</h3></span></li>
+            <li><span><h3>Branding</h3></span></li>
         </ul>
+        <div class="fw-footer">
+            <h4>At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis </h4><a href="#">Submit Now</a>
         </div>
-<div class="item"><ul class="team">
-            <li>
-                <img class="tp0" src="img/mask.png">
-                <h2>JON SNOW</h2>
-                <img src="img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
-            <li>
-                <img class="tp1" src="./img/mask.png">
-                <h2>CERSEI LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
-            <li>
-                <img class="tp2" src="./img/mask.png">
-                <h2>JAMIE LANNISTER</h2>
-                <img src="./img/sg-l-it.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-            </li>
-        </ul>
+    </div>
+    <div class="os">
+        <div class="os-area">
+            <h2>Our Services</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="os-left tabs">
+                <ul class="os-tabs">
+                    <li><img src="./img/os-item1.png" alt=""></li>
+                    <li class="active"><img src="./img/os-item2.png" alt=""></li>
+                    <li><img src="./img/os-item3.png" alt=""></li>
+                    <li><img src="./img/os-item4.png" alt=""></li>
+                </ul>
+                <div class="tabs__content os_tabs_item">
+                    <h2>0</h2>
+                    <p>At vero eos et accusamus et <i>iusto</i> odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
+                    <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <i>similique sunt</i> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                </div>
+                <div class="tabs__content active os_tabs_item">
+                    <h2>Graphic Design</h2>
+                    <p>At vero eos et accusamus et <i>iusto</i> odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
+                    <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <i>similique sunt</i> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                </div>
+                <div class="tabs__content os_tabs_item">
+                    <h2>2</h2>
+                    <p>At vero eos et accusamus et <i>iusto</i> odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
+                    <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <i>similique sunt</i> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                </div>
+                <div class="tabs__content os_tabs_item">
+                    <h2>3</h2>
+                    <p>At vero eos et accusamus et <i>iusto</i> odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
+                    <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <i>similique sunt</i> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                </div>
+            </div>
+            <div class="os-right">
+                <div class="os-r-a"><h2 class="c1">80<span>%</span></h2><p>Branding</p>
+                </div>
+                <div class="os-r-a"><h2 class="c2">75<span>%</span></h2><p>Web Design</p>
+                </div>
+                <div class="os-r-a"><h2 class="c3">60<span>%</span></h2><p>UI/UX</p>
+                </div>
+            </div>
         </div>
-  </div>
-      </div>
-      </div>
-      <div id="sb">
-       <img src="./img/plane.png"/>
-        <h2>SUBSCRIBE TO STAY IN THE LOOP</h2> 
-        <input type="email" name="email"/><a href="#">SEND</a> 
-      </div>
-      <footer id="f">
-        <a class="top" href="#header"></a>
-         <h2>DROP US A LINE</h2>
-         <img class="tm-img" src="./img/sep.png">
-         <ul class="f-area">
-             <li>
-                 <img src="./img/geo-ico.png">
-                 <p>ADDRESS</p>
-                 <span>Level 6, 23 Pitt St, Sydney</span>
-             </li>
-             <li>
-                 <img src="./img/phone.png">
-                 <p>PHONE</p>
-                 <span>+61 9 211 3741</span>
-             </li>
-             <li>
-                 <img src="./img/air.png">
-                 <p>EMAIL</p>
-                 <span>hey@halcyon.com.au</span>
-             </li>
-         </ul>
-         <a href="#" class="basket"></a><a href="#" class="twitter"></a><a href="#" class="mail"></a>
-          <div class="f-f">
-             <ul class="f-f-area">
-              <li><a href="#">Terms & Conditions</a>  |  <a href="#">Legals</a></li>
-              <li>Designed & Developed by <a href="#">Peter Finlan</a> exclusively for <a href="#"><i>Codrops</i></a></li>
-              </ul></div>
-      </footer>
-       <script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/anchor.js" type="text/javascript"></script>
-    <script>$('.carousel').carousel({
-interval:4000
-})</script>
+    </div>
+    <div class="tq">
+        <div class="tq-area">
+            <div class="tq-text">
+                <h2>Impressed ?</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                <p><b>- Abdullah Noman</b><br> Creatice Director, <i>Code Cafe</i></p>
+            </div>
+            <span>B<i>O</i>UNCY</span>
+        </div>
+    </div>
+    <div class="p">
+        <div class="p-area">
+            <h2>THE PORTFOLIO</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="tabs p-tabs">
+
+                <ul class="tabs__caption">
+
+                    <li class="active">All Works
+                        <div class="line"></div>
+                    </li>
+                    <li>Print
+                        <div class="line"></div>
+                    </li>
+                    <li>Identity
+                        <div class="line"></div>
+                    </li>
+                    <li>Branding
+                        <div class="line"></div>
+                    </li>
+                    <li>Web
+                        <div class="line"></div>
+                    </li>
+                    <li>HTML
+                        <div class="line"></div>
+                    </li>
+                    <li>Wordpress
+                        <div class="line"></div>
+                    </li>
+                </ul>
+
+                <div class="tabs__content active ">
+                    <ul class="p-item">
+                        <li><img src="./img/p-item.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item5.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item8.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item2.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item6.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="/img/p-item9.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="/img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item3.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item0.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item10.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item4.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item7.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item11.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                    </ul>
+                </div>
+
+                <div class="tabs__content">
+                    <ul class="p-item">
+                        <li><img src="./img/p-item.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item5.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item8.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item2.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item6.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item9.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item3.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item0.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item10.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item4.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item7.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="/img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                        <li><img src="./img/p-item11.png"><span>
+            <h2>TITLE HERE</h2>
+            <img src="./img/lineh.png">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <a href="#"></a><a href="#"></a>
+        </span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- .tabs-->
+            <div class="p-c">
+                <h2>At vero eos et <b>accusamus</b> et iusto odio <b>dignissimos</b> ducimus qui blanditiis </h2>
+                <a href="#">Start Project</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="t">
+        <h2>THE TEAM</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <div id="tCarousel" class="carousel slide t-slide" data-ride="carousel1">
+            <!-- Indicators -->
+            <ol class="carousel-indicators t-indicators">
+                <li data-target="#tCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#tCarousel" data-slide-to="1"></li>
+                <li data-target="#tCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="t-item">
+                        <div class="t-item-pic"><img src="./img/t-item-pic.png" alt=""></div>
+                        <div class="t-item-text">
+                            <h2>Abdullah Noman<i>Creative Director, Code Cafe</i></h2>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div class="scils">
+                                <h2>BRANDING</h2>
+                                <h3>80 %</h3>
+                                <img src="./img/line_scils1.png">
+                            </div>
+                            <div class="scils">
+                                <h2>Web Design</h2>
+                                <h3>65 %</h3>
+                                <img src="./img/line_scils2.png">
+                            </div>
+                            <div class="scils">
+                                <h2>User Interface</h2>
+                                <h3>75 %</h3>
+                                <img src="./img/line_scils3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="t-item">
+                        <div class="t-item-pic"><img src="./img/t-item-pic.png" alt=""></div>
+                        <div class="t-item-text">
+                            <h2>Abdullah Noman<i>Creative Director, Code Cafe</i></h2>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div class="scils">
+                                <h2>BRANDING</h2>
+                                <h3>80 %</h3>
+                                <img src="./img/line_scils1.png">
+                            </div>
+                            <div class="scils">
+                                <h2>Web Design</h2>
+                                <h3>65 %</h3>
+                                <img src="./img/line_scils2.png">
+                            </div>
+                            <div class="scils">
+                                <h2>User Interface</h2>
+                                <h3>75 %</h3>
+                                <img src="./img/line_scils3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="t-item">
+                        <div class="t-item-pic"><img src="./img/t-item-pic.png" alt=""></div>
+                        <div class="t-item-text">
+                            <h2>Abdullah Noman<i>Creative Director, Code Cafe</i></h2>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div class="scils">
+                                <h2>BRANDING</h2>
+                                <h3>80 %</h3>
+                                <img src="./img/line_scils1.png">
+                            </div>
+                            <div class="scils">
+                                <h2>Web Design</h2>
+                                <h3>65 %</h3>
+                                <img src="./img/line_scils2.png">
+                            </div>
+                            <div class="scils">
+                                <h2>User Interface</h2>
+                                <h3>75 %</h3>
+                                <img src="./img/line_scils3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tc">
+        <h2>Already Loved Us? Let’s talk!</h2>
+        <a href=".cu">Contact Us</a>
+    </div>
+    <div class="tt">
+        <h2>Testimonials</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <div id="ttCarousel" class="carousel slide tt-area" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators t-indicators">
+                <li data-target="#ttCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#ttCarousel" data-slide-to="1"></li>
+                <li data-target="#ttCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class=" tt-slide">
+                        <div class="tt-slide-l"><img src="./img/tt-pic.png"></div>
+                        <div class="tt-slide-r">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <h2>PARTHO</h2>
+                            <h3>FOUNDER, ARTWAYS BD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class=" tt-slide">
+                        <div class="tt-slide-l"><img src="./img/tt-pic.png"></div>
+                        <div class="tt-slide-r">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <h2>PARTHO</h2>
+                            <h3>FOUNDER, ARTWAYS BD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class=" tt-slide">
+                        <div class="tt-slide-l"><img src="./img/tt-pic.png"></div>
+                        <div class="tt-slide-r">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                            <h2>PARTHO</h2>
+                            <h3>FOUNDER, ARTWAYS BD</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        <div id="bCarousel" class="carousel slide b-area" data-ride="carousel">
+            <!-- Indicators -->
+            
+ 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item b-slide-area">
+                    <div class="b-slide-area-title">
+                        <h2>LATEST NEWS</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    </div>
+                    <div class="b-slide">
+                        <h2>The trending Landing Pages</h2>
+                        <h3>by<i> Kabir Uddin</i></h3>
+                        <h4>6950 Likes - 243 Comments - 703 shares</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio... </p>
+                        <a href="#">+ Read More</a>
+                    </div>
+                </div>
+                <div class="item b-slide-area">
+                    <div class="b-slide-area-title-video">
+                        <h2>LATEST Videos</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    </div>
+                        <video loop controls="controls" src="./video/videoplayback.mp4"></video>
+                </div>
+                <div class="item active b-slide-area">
+                    <div class="b-slide">
+                        <h2>The trending Landing Pages</h2>
+                        <h3>by<i> Kabir Uddin</i></h3>
+                        <h4>6950 Likes - 243 Comments - 703 shares</h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio... </p>
+                        <a href="#">+ Read More</a>
+                    </div>
+                    <div class="b-slide-area-title">
+                        <h2>VISIT OUR BLOG</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    </div>
+                </div>
+            </div>
+           <ol class="carousel-indicators b-indicators">
+                <li data-target="#bCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bCarousel" data-slide-to="1"></li>
+                <li data-target="#bCarousel" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+    <div class="op">
+        <h2>Our Price</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <div class="op-area">
+            <div class="op-area-item">
+                <h2>PREMIUM</h2>
+                <h3>$ 60</h3>
+                <p>Per Month</p>
+                <div class="op-area-item-hover">
+                    <p>Full Branding</p>
+                    <p>Project Management</p>  
+                    <p>Unlimited Revisions</p>
+                    <p>24/7 h Service</p>
+                    <p>Free Domain</p>
+                    <p>Free Hosting</p>
+                    <a href="#">Let’s Start ></a>
+                </div>
+            </div>
+            <div class="op-area-item">
+                <h2>STANDARD</h2>
+                <h3>$ 70</h3>
+                <p>Per Month</p>
+                <div class="op-area-item-hover">
+                    <p>Full Branding</p>
+                    <p>Project Management</p>  
+                    <p>Unlimited Revisions</p>
+                    <p>24/7 h Service</p>
+                    <p>Free Domain</p>
+                    <p>Free Hosting</p>
+                    <a href="#">Let’s Start ></a>
+                </div>
+            </div>
+            <div class="op-area-item">
+                <h2>EXCLUSIVE</h2>
+                <h3>$ 80</h3>
+                <p>Per Month</p>
+                <div class="op-area-item-hover">
+                    <p>Full Branding</p>
+                    <p>Project Management</p>  
+                    <p>Unlimited Revisions</p>
+                    <p>24/7 h Service</p>
+                    <p>Free Domain</p>
+                    <p>Free Hosting</p>
+                    <a href="#">Let’s Start ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s">
+        <h2>Subscribe us</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <input type="email" name="email" placeholder="Email address"><input type="submit" value="SUBMIT">
+    </div>
+    <div class="cu">
+        <div class="cu-area">
+            <h2>Contact Us</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="cu-area-items">
+                <div class="cai">
+                    <img src="./img/mail.png">
+                    <h2>EMAIL</h2>
+                    <p>hello@codecafe.com</p>
+                    <p>Personal@codecafe.com</p>
+                </div>
+                <div class="cai">
+                    <img src="./img/address-ico.png">
+                    <h2>OUR OFFICE</h2>
+                    <p>240 Bhatikhana, 8200 Barisal</p>
+                    <p>Bangladesh</p>
+                </div>
+                <div class="cai">
+                    <img src="./img/phone.png">
+                    <h2>PHONE</h2>
+                    <p>+00 11 66 99 66 44</p>
+                    <p>11 99 66 44 065</p>
+                </div>
+            </div>
+        </div>
+        <div class="cu-form">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="text" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="SUBMIT NOW">
+        </div>
+        <div class="cu-map"><div class="hover-map">
+            <h2>FIND US ON THE MAP</h2><img src="./img/HOVER.png"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6209196715582!2d0.031058902338311024!3d51.522687893304195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x139373c02f0fa1bc!2sBelgrave+Court!5e0!3m2!1sru!2sua!4v1492621763815" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+    <footer>
+        <h2>Bouncy</h2>
+        <p>Copyright 2015. All rights Reserved</p>
+        <div class="f-soc">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/anchor.js" type="text/javascript"></script>
+    <script src="./js/tabs.js" type="text/javascript"></script>
+    <script src="./js/jquery.knob.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 4000
+        })
+    </script>
+    <script>
+        $(function() {
+            $(".dial").knob();
+        });
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
